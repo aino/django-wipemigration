@@ -20,4 +20,5 @@ class Command(BaseCommand):
             if ans == 'Y':
                 Migration.objects.filter(app=app_label).delete()
                 print('Done.')
-            print('No action.')
+            else:
+                print('No action.')
